@@ -1,0 +1,235 @@
+:root {
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%);
+  --font-general: "Epilogue", sans-serif;
+}
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: var(--font-general);
+  font-size: 18px;
+  background-color: var(--almost-white);
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.inactive {
+  display: none;
+}
+.btn {
+  border: none;
+  border-radius: 15px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.logo-info-page {
+  padding: 25px 10px;
+  justify-content: space-between;
+}
+.main-body {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+img {
+  width: auto;
+  height: auto;
+}
+/* main container */
+.img-header {
+  margin-bottom: 45px;
+}
+.info-section {
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+.title-section {
+  font-size: 2.1em;
+}
+.paragraph {
+  color: var(--medium-gray);
+  font-size: 0.95em;
+  padding: 5px;
+}
+.btn-lear_more {
+  width: 30%;
+  height: 50px;
+  font-size: 0.9em;
+  font-weight: bold;
+  background-color: var(--almost-black);
+  color: var(--almost-white);
+}
+/* footer marker */
+.client-marck {
+  padding: 20px 10px;
+  justify-content: space-between;
+}
+.logo-marck {
+  width: 20%;
+  height: 20px;
+}
+/* styles js */
+/* flex */
+.nav-menu {
+  flex-direction: column;
+  align-items: end;
+  gap: 30px;
+  padding: 20px 15px;
+}
+/* screen */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  background-color: var(--almost-white);
+  z-index: 1;
+  transition: right 3s;
+}
+.nav-menu::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  transition: left 3s;
+}
+.nav-menu-ul {
+  flex-direction: column;
+  gap: 30px;
+  list-style: none;
+  width: 100%;
+}
+.link-header {
+  color: var(--medium-gray);
+  text-decoration: none;
+}
+.link-header img {
+  margin-left: 10px;
+}
+.link-header img {
+  vertical-align: middle;
+}
+.menu-close-mobile {
+  background-color: transparent;
+}
+.button-menu-collapsed {
+  width: 100%;
+  flex-direction: column;
+  gap: 2px;
+}
+.btn-selection {
+  border: 2px solid var(--medium-gray);
+}
+.btn-collapsed {
+  font-size: 0.85em;
+  color: var(--medium-gray);
+  font-weight: bold;
+  height: 40px;
+}
+/* list menu-collapsed */
+.features-info {
+  padding: 5px 25px;
+}
+.company-info {
+  padding: 20px 25px;
+}
+.list-menu {
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  color: var(--medium-gray);
+}
+.list-features li img {
+  margin-right: 15px;
+}
+
+@media only screen and (min-width: 850px) {
+  .main-body {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+  .logo-info-page {
+    margin:0 60px;
+    align-items: center;
+  }
+  /* main container */
+  .img-header {
+    width: 33%;
+    height: 800px;
+  }
+  .info-section {
+    width: 38%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    text-align: start;
+  }
+  .title-section {
+    margin-top: 160px;
+    line-height:100px;
+    font-size: 6.4em;
+  }
+  .paragraph {
+    width: 80%;
+    font-size: 1.3em;
+  }
+  .btn-lear_more {
+    color: var(--almost-black);
+  }
+  .btn {
+    border: 2px solid var(--almost-black);
+    background-color: transparent;
+    font-size: 1.05em;
+    padding:10px 15px;
+  }
+  /* footer marker */
+  .client-marck {
+    padding: 20px 0px;
+  }
+  .logo-marck {
+    width: 20%;
+    height: 40px;
+  }
+  .nav-bar {
+    flex:1;
+  }
+  .nav-bar .list-link{
+    list-style: none;
+    padding: 10px 60px;
+    gap:40px;
+  }
+  .features-info-header {
+    padding:35px 50px;
+    position: fixed;
+    top:80px;
+    left: 120px;
+    background-color: var(--almost-white);
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.167);
+  }
+  .company-info-header {
+    left: 350px;
+    padding:35px 35px;
+  }
+}

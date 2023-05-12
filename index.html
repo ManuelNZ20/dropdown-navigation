@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo-info-page container">
+      <img src="./images/logo.svg" alt="">
+      <nav class="nav-bar">
+        <ul class="list-link container">
+          <li>
+            <a href="#" class="link-header link-header-features">
+              Features
+              <img class="img-direction-features" src="./images/icon-arrow-down.svg" alt="">
+            </a>
+          </li>
+          <div class="features-info features-info-header inactive">
+            <ul class="list-menu container ">
+              <li>
+                <img src="./images/icon-todo.svg" alt="" srcset="">
+                Todo List
+              </li>
+              <li>
+                <img src="./images/icon-calendar.svg" alt="" srcset="">Calendar
+              </li>
+              <li>
+                <img src="./images/icon-reminders.svg" alt="" srcset="">
+                Reminders
+              </li>
+              <li>
+                <img src="./images/icon-planning.svg" alt="">
+                Planning
+              </li>
+            </ul>
+          </div>
+          <li>
+            <a href="#" class="link-header link-header-company">
+              Company
+              <img class="img-direction-company" src="./images/icon-arrow-down.svg" alt="">
+            </a>
+          </li>
+          <div class="company-info features-info-header company-info-header inactive">
+            <ul class="list-menu container">
+              <li>
+                History
+              </li>
+              <li>
+                Our Team
+              </li>
+              <li>
+                Blog
+              </li>
+            </ul>
+          </div>
+          <li>
+            <a href="#" class="link-header">
+              Careers
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-header">
+              About
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu">
+        <button class="menu-mobile btn">
+          <img src="./images/icon-menu.svg">
+        </button>
+        <nav class="nav-menu container inactive">
+          <button class="menu-close-mobile btn active">
+            <img src="./images/icon-close-menu.svg">
+          </button>
+          <ul class="nav-menu-ul container">
+            <li>
+              <a href="#" class="link-header link-features">
+                Features
+                <img class="img-direction-features" src="./images/icon-arrow-down.svg" alt="">
+              </a>
+            </li>
+            <div class="features-info inactive">
+              <ul class="list-menu container ">
+                <li>
+                  <img src="./images/icon-todo.svg" alt="" srcset="">
+                  Todo List
+                </li>
+                <li>
+                  <img src="./images/icon-calendar.svg" alt="" srcset="">Calendar
+                </li>
+                <li>
+                  <img src="./images/icon-reminders.svg" alt="" srcset="">
+                  Reminders
+                </li>
+                <li>
+                  <img src="./images/icon-planning.svg" alt="">
+                  Planning
+                </li>
+              </ul>
+            </div>
+            <li>
+              <a href="#" class="link-header link-company">
+                Company
+                <img class="img-direction-company" src="./images/icon-arrow-down.svg" alt="">
+              </a>
+              <div class="company-info inactive">
+                <ul class="list-menu container">
+                  <li>
+                    History
+                  </li>
+                  <li>
+                    Our Team
+                  </li>
+                  <li>
+                    Blog
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="link-header">
+                Careers
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link-header">
+                About
+              </a>
+            </li>
+          </ul>
+          <div class="button-menu-collapsed container">
+            <button class="btn btn-collapsed">
+              Login
+            </button>
+            <button class="btn btn-collapsed btn-selection">
+              Register
+            </button>
+          </div>
+        </nav>
+        <button class="btn-login btn">
+          Login
+        </button>
+        <button class="btn-register btn">
+          Register
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="main-body container">
+    <img src="./images/image-hero-mobile.png" alt="" class="img-header">
+    <div class="info-section container">
+      <h1 class="title-section">
+        Make remote work
+      </h1>
+      <p class="paragraph">
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <button class="btn btn-lear_more">
+        Learn more
+      </button>
+      <div class="client-marck container">
+        <img class="logo-marck" src="./images/client-databiz.svg" alt="">
+        <img class="logo-marck" src="./images/client-audiophile.svg" alt="">
+        <img class="logo-marck" src="./images/client-meet.svg" alt="">
+        <img class="logo-marck" src="./images/client-maker.svg" alt="">
+      </div>
+    </div>
+  </main>
+  <script src="./index.js">
+  </script>
+</body>
+
+</html>
